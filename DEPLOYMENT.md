@@ -1,15 +1,14 @@
 # DEPLOYMENT.md — food-ingredients agentic AI: deployment runbook
 
-**Primary deploy path: GitHub Actions** (`.github/workflows/deploy.yml`) —
-push to `main` and the service builds, deploys to Azure Container Apps, and
-smoke-tests itself. **Local fallback:** `./scripts/deploy-azure.sh`.
-The **AKS + Terraform** path is the enterprise story in `infra/terraform/`.
+> **Status: not deployed.** Nothing from this repo runs in Azure today. This
+> runbook describes how it *would* be deployed with your own subscription.
 
-> **Heads-up:** workflow files can't be pushed by the repo's automation
-> identity (GitHub API returns 403 on `.github/workflows/*`). Add
-> `.github/workflows/ci.yml`, `deploy.yml`, and `qa.yml` manually in the
-> GitHub web UI (repo → Add file → Upload files), then push. Everything else
-> in this repo is already pushed.
+**Deploy path today:** `./scripts/deploy-azure.sh` (Azure Container Apps,
+run by hand with your own `az login`). **Planned:** a GitHub Actions
+`deploy.yml` with OIDC login; it is not in the repo yet, and the sections
+below that mention it describe the planned workflow. The **AKS + Terraform**
+path is the enterprise option in `infra/terraform/` (validated in CI with
+`terraform validate`, never applied).
 
 > All data in this project is **synthetic and fictional**. This is an
 > independent portfolio project, not affiliated with any real company.

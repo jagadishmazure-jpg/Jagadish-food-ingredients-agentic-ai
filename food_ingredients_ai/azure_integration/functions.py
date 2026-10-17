@@ -22,11 +22,8 @@ from food_ingredients_ai.azure_integration.events import (
     emit_lifecycle_event,
 )
 from food_ingredients_ai.azure_integration.servicebus import (
-    BusMessage,
     JobProcessor,
-    JobResult,
     ReformulationJob,
-    enqueue_job,
 )
 
 #: Runner injected by the host: ``(job) -> summary dict``.

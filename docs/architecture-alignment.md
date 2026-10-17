@@ -1,8 +1,8 @@
 # Architecture Alignment (Agentic-AI Architecture Principles)
 
 > **Disclaimer.** Independent portfolio demo; synthetic data only. Principles
-> below are paraphrased in our own words from the agentic-AI architecture
-> ebook — no passages copied.
+> below are in my own words; background reading: Databricks, *The New
+> Architecture of Agentic AI*. No passages copied.
 
 ## 1. Outcome-first design
 

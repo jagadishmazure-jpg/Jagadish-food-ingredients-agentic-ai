@@ -39,7 +39,8 @@ from food_ingredients_ai.governance.audit import AuditTrail
 from food_ingredients_ai.guardrails import check_input, check_output, load_policy
 from food_ingredients_ai.observability.logging import get_json_logger
 from food_ingredients_ai.rag.retrieval import Retriever
-from food_ingredients_ai.service.memory import SessionStore, session_store as default_store
+from food_ingredients_ai.service.memory import SessionStore
+from food_ingredients_ai.service.memory import session_store as default_store
 
 # Lifecycle events (Azure Event Grid in production; in-memory offline).
 # Imported lazily inside methods to keep this module importable even if the

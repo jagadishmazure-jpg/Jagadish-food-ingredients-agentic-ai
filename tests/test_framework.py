@@ -8,7 +8,6 @@ import asyncio
 
 import pytest
 import yaml
-
 from agent_framework import Agent
 
 from food_ingredients_ai.framework.agents import (

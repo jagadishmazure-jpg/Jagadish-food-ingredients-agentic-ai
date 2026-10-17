@@ -86,4 +86,4 @@ uv run python -m food_ingredients_ai.demo --audit-log /tmp/demo-audit.jsonl
 ```
 
 Scenarios cover sweet/savory bakery and carbonated/energy/flavored-water/
-nutritional beverages — the ebook's priority categories.
+nutritional beverages, two categories where clean-label work is common.

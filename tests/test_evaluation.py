@@ -2,7 +2,6 @@
 
 from food_ingredients_ai.evaluation import datasets, metrics, runner
 
-
 # -- metrics -------------------------------------------------------------------
 
 

@@ -173,10 +173,9 @@ and use the client-credentials or auth-code flow against
 
 ## 6. CI/CD (optional)
 
-`.github/workflows/deploy.yml` automates steps 2–4 on push to `main`
-(build → push to ACR → `kubectl apply -k` → rollout check → smoke test).
-Workflow files can't be pushed via the repo's automation identity — add
-it manually, then set the repo secrets listed at the top of the file.
+**Planned, not in the repo yet:** a `.github/workflows/deploy.yml` that
+automates steps 2–4 on push to `main` (build → push to ACR → `kubectl apply -k`
+→ rollout check → smoke test) using OIDC federated credentials.
 
 ## 7. Rollback & teardown
 

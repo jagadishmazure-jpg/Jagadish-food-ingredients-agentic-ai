@@ -15,7 +15,6 @@ from food_ingredients_ai.graph.supply_disruption_graph import (
     run_supply_disruption_graph,
 )
 
-
 # -- supply disruption ------------------------------------------------------
 
 

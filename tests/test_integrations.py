@@ -10,7 +10,6 @@ from food_ingredients_ai.integrations import (
     sap_from_env,
 )
 
-
 # -- CRM -----------------------------------------------------------------------
 
 

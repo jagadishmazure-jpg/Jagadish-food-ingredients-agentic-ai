@@ -10,7 +10,7 @@ All demo data is synthetic and fictional.
 
 from __future__ import annotations
 
-from typing import Dict, Iterable, List, Mapping, Optional
+from typing import Iterable, List, Mapping, Optional
 
 SECTION_HEADERS = {
     "instructions": "[SYSTEM INSTRUCTIONS]",

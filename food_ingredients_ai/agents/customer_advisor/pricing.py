@@ -10,9 +10,8 @@ BASE_COST_PER_KG_USD = 10.0  # demo scaling factor
 MARGIN = 1.35  # demo base margin multiplier
 
 # Demo willingness-to-pay uplift per *validated* claim.
-# Rationale (paraphrased from public clean-label consumer research): about
-# half of consumers will pay 10% or more for claims they value, so the demo
-# maps total validated-claim uplift into named willingness-to-pay bands.
+# Demo assumption: consumers pay roughly 10% more for claims they value, so
+# total validated-claim uplift maps into named willingness-to-pay bands.
 WTP_UPLIFT = {
     "natural": 0.10,
     "no artificial ingredients": 0.08,

@@ -172,7 +172,7 @@ offline ↔ `OpenAIChatClient` on Azure OpenAI). See `framework/`.
 | Image | Multi-stage `Dockerfile` (python:3.12-slim, non-root, healthcheck) |
 | IaC | `infra/terraform/` — RG, ACR, AKS (zonal, workload identity), Key Vault (RBAC), App Insights, Foundry account + model deployment, least-privilege RBAC |
 | K8s | `infra/k8s/` — namespace, PDB, anti-affinity, HPA, probes, workload-identity SA, Key Vault CSI |
-| CI/CD | `.github/workflows/deploy.yml` — build → push to ACR → deploy (add manually; can't be pushed via API) |
+| CI/CD | planned `.github/workflows/deploy.yml` — build → push to ACR → deploy (not in the repo yet) |
 | Edge / load balancing | Azure Front Door (Standard, WAF Prevention) → APIM gateway → AKS ingress → service (`infra/terraform/frontdoor.tf`, `apim.tf`). Traffic path: Client → Front Door → APIM → AKS ingress → agent service |
 | Runbook | `docs/deployment-runbook.md` — provision → build → deploy → verify |
 

@@ -6,7 +6,6 @@ import pytest
 from food_ingredients_ai.datalayer.hybrid import (
     DataPlacement,
     Environment,
-    EnvironmentRegistry,
     HybridPolicyEngine,
     MovementLog,
     PlacementRegistry,

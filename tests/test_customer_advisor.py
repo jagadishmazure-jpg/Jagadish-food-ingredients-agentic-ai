@@ -2,8 +2,14 @@
 
 import pytest
 
-from food_ingredients_ai.agents.customer_advisor import CustomerAdvisorAgent
-from food_ingredients_ai.agents.customer_advisor import claims, formulation, pricing, recommender, tech_sheet
+from food_ingredients_ai.agents.customer_advisor import (
+    CustomerAdvisorAgent,
+    claims,
+    formulation,
+    pricing,
+    recommender,
+    tech_sheet,
+)
 from food_ingredients_ai.data.loader import get_formula
 
 

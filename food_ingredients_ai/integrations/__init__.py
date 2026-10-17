@@ -12,8 +12,8 @@ from food_ingredients_ai.integrations.crm import (
     crm_from_env,
 )
 from food_ingredients_ai.integrations.sap import (
-    SAPAdapter,
     DemoSAPAdapter,
+    SAPAdapter,
     sap_from_env,
 )
 

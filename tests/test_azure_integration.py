@@ -7,11 +7,9 @@ Event Hub batching, Functions triggers, Logic Apps callbacks, and the
 queue-consumer worker.
 """
 
-import json
 
 import pytest
 
-from food_ingredients_ai.azure_integration import events as lifecycle
 from food_ingredients_ai.azure_integration import (
     eventgrid,
     eventhub,
@@ -19,6 +17,7 @@ from food_ingredients_ai.azure_integration import (
     logicapps,
     servicebus,
 )
+from food_ingredients_ai.azure_integration import events as lifecycle
 from food_ingredients_ai.azure_integration.events import (
     ANOMALY_FLAGGED,
     APPROVAL_GRANTED,

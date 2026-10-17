@@ -12,7 +12,6 @@ from food_ingredients_ai.graph.invoice_graph import run_invoice_graph
 from food_ingredients_ai.graph.procurement_graph import run_procurement_graph
 from food_ingredients_ai.observability.costs import forecast_spend
 
-
 # -- procurement ------------------------------------------------------------
 
 

@@ -115,6 +115,7 @@ class LegacyBridge(ABC):
 
     def ping(self) -> None:
         """Liveness probe. Default no-op (assumed healthy); override per system."""
+        return None
 
     def health_check(self) -> BridgeHealth:
         """Run :meth:`ping` and report a :class:`BridgeHealth`."""

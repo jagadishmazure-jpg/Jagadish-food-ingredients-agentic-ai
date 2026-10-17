@@ -26,8 +26,7 @@ docs. When the regulatory checker says "natural," it means *this*.
 
 `natural` → `no artificial ingredients` → `no artificial colors` →
 `no artificial flavors` → `reduced sugar` → `non-GMO` → `plant-based`
-(see `regulatory.py::CLAIM_PRIORITY`). Rationale (paraphrased public
-finding): "natural"/"all-natural" is the most consumer-recognized claim,
+(see `regulatory.py::CLAIM_PRIORITY`). Demo assumption: "natural"/"all-natural" is the most consumer-recognized claim,
 so it is validated first and featured first.
 
 ## Ingredient function terms (demo)
@@ -45,8 +44,8 @@ so it is validated first and featured first.
 
 | Term | Demo meaning |
 |---|---|
-| **willingness-to-pay (WTP) band** | Price range consumers accept for validated claims; demo: 10%+ premium band for valued claims (paraphrased public finding) |
-| **cycle time** | Reformulation project duration estimate; demo baseline 5–7 months (paraphrased public finding) |
+| **willingness-to-pay (WTP) band** | Price range consumers accept for validated claims; demo: 10%+ premium band for valued claims (demo assumption) |
+| **cycle time** | Reformulation project duration estimate; demo baseline 5–7 months (demo assumption) |
 | **reorder point** | Inventory level triggering a purchase order (avg daily demand × lead time × safety factor) |
 | **carbon intensity** | CO₂e per tonne of production (synthetic readings) |
 

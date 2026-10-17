@@ -1,4 +1,4 @@
-"""Tests for the Part A expansion: new data, ebook-grounded heuristics."""
+"""Tests for the Part A expansion: new data, demo-assumption heuristics."""
 
 from food_ingredients_ai.agents.customer_advisor import pricing
 from food_ingredients_ai.agents.rd_formulation import (
@@ -139,7 +139,7 @@ def test_cycle_time_estimate_shape():
         {"risk_flags": ["x"]},
     )
     assert "estimated_weeks" in out and "estimated_months" in out
-    assert "baseline_months" in out  # 5-7 month public baseline (paraphrased)
+    assert "baseline_months" in out  # 5-7 month demo baseline
     assert out["baseline_months"] == [5.0, 7.0]
     assert out["estimated_weeks"] > 0
 
