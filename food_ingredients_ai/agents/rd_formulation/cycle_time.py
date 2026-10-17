@@ -1,7 +1,7 @@
 """Reformulation cycle-time estimator (demo heuristic).
 
-Rationale (paraphrased from public clean-label manufacturer research):
-the average clean-label reformulation takes 5-7 months. The demo estimates
+Demo assumption: a clean-label reformulation takes 5-7 months without
+assistance. The demo estimates
 an agentic-AI-assisted cycle time from reformulation complexity — number of
 substitutions, risk flags, and category difficulty (bakery is hardest) —
 and reports the reduction versus that baseline. Fully deterministic.
@@ -60,7 +60,7 @@ def estimate_cycle_time(
         "assumptions": [
             "demo heuristic model — not a real project-planning estimate",
             f"baseline {BASELINE_MONTHS_LOW}-{BASELINE_MONTHS_HIGH} months "
-            "(public manufacturer research, paraphrased)",
+            "(demo assumption)",
             f"effort = {BASE_WEEKS}w base + {WEEKS_PER_SUBSTITUTION}w/substitution "
             f"+ {WEEKS_PER_RISK_FLAG}w/risk flag"
             + (" + 1.5w bakery complexity" if is_bakery else ""),

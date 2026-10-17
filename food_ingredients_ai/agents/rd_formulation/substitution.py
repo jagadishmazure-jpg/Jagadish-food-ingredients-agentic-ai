@@ -38,7 +38,7 @@ WATER_ID = "WTR-00"
 def _cost_aware_key(candidate: Dict[str, Any]) -> tuple:
     """Sort key for cost-aware candidate ranking.
 
-    Rationale (paraphrased from public clean-label manufacturer research):
+    Demo assumption:
     ingredient cost is the #1 barrier to reformulation, so when several
     clean-label candidates share a function, the demo ranks the cheapest
     first and uses texture impact only as a tie-breaker (lower impact means

@@ -21,7 +21,6 @@ from typing import Any, Callable, Dict, List, Optional
 from food_ingredients_ai.azure_integration.events import (
     CloudEvent,
     emit_lifecycle_event,
-    make_event,
 )
 
 #: Domain event types fanned out on the grid topic.

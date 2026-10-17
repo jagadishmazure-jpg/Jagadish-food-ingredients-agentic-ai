@@ -25,9 +25,9 @@ from __future__ import annotations
 
 from typing import Any, Dict, Optional
 
+from food_ingredients_ai.agents.supply_chain import SupplyChainAgent
 from food_ingredients_ai.governance.approvals import ApprovalGate
 from food_ingredients_ai.graph.graph import Graph
-from food_ingredients_ai.agents.supply_chain import SupplyChainAgent
 from food_ingredients_ai.loops.hitl import hitl_gate
 
 #: Synthetic catalog prices (USD per kg) — demo data, not real pricing.

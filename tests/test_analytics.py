@@ -5,9 +5,9 @@ import asyncio
 import pytest
 
 from food_ingredients_ai.analytics import (
+    SYNTHETIC_LABEL,
     AggregateStore,
     PeerBenchmark,
-    SYNTHETIC_LABEL,
     delta_vs_previous,
     extract_run_summary,
     flag_anomalies,

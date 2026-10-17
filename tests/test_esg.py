@@ -2,8 +2,7 @@
 
 import pytest
 
-from food_ingredients_ai.agents.esg import ESGAgent
-from food_ingredients_ai.agents.esg import carbon, collector, intensity, report
+from food_ingredients_ai.agents.esg import ESGAgent, carbon, collector, intensity, report
 
 
 def _agent():

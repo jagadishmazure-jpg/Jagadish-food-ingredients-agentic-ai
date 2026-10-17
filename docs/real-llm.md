@@ -1,6 +1,6 @@
 # Going Live with a Real LLM
 
-Everything in this repo runs **offline by default**: the 568 tests, the
+Everything in this repo runs **offline by default**: the test suite, the
 demo service, and all four business-flow graphs use a scripted
 `FakeChatClient` — deterministic, free, no API keys. This guide covers
 switching to a **real LLM** for live demos.

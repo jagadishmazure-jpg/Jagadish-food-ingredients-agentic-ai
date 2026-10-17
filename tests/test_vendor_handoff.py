@@ -1,8 +1,11 @@
 """Tests for the cross-vendor A2A handoff (vendor risk agent)."""
 
-import pytest
 
-from food_ingredients_ai.interop import vendor_agents
+from food_ingredients_ai.graph.vendor_risk_graph import (
+    HIGH_RISK_SUPPLIER,
+    LOW_RISK_SUPPLIER,
+    run_vendor_risk_graph,
+)
 from food_ingredients_ai.interop.a2a import A2AAdapter
 from food_ingredients_ai.interop.auth import issue_token
 from food_ingredients_ai.interop.vendor_agents import (
@@ -14,11 +17,6 @@ from food_ingredients_ai.interop.vendor_agents import (
     score_supplier_risk,
     vendor_adapter,
     vendor_risk_executor,
-)
-from food_ingredients_ai.graph.vendor_risk_graph import (
-    HIGH_RISK_SUPPLIER,
-    LOW_RISK_SUPPLIER,
-    run_vendor_risk_graph,
 )
 
 

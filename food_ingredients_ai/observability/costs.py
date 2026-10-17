@@ -8,7 +8,7 @@ configurable demo per-1k-token rates.
 from __future__ import annotations
 
 import time
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Any, Dict, List
 
 # Demo rates (USD per 1k tokens) — placeholders, not real Azure pricing.

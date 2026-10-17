@@ -14,7 +14,7 @@ from food_ingredients_ai.semantics.agent_tools import (
 )
 from food_ingredients_ai.semantics.explainer import explain_change, summarize
 from food_ingredients_ai.semantics.lineage import explain_lineage
-from food_ingredients_ai.semantics.metrics import DEMO_METRICS, MetricDefinition
+from food_ingredients_ai.semantics.metrics import MetricDefinition
 from food_ingredients_ai.semantics.registry import MetricRegistry, default_metric_registry
 
 

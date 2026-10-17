@@ -8,7 +8,6 @@ import pytest
 
 from food_ingredients_ai.graph import Graph, run_reformulation_graph
 
-
 # --- Graph runtime -----------------------------------------------------------
 
 

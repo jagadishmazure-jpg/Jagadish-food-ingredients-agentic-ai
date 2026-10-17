@@ -90,7 +90,6 @@ def test_tasks_get_requires_token():
 
 def test_tasks_get_rejects_wrong_subject():
     adapter, task_id, _ = _a2a_task()
-    other = _token(["formulation:write"])
     # same scopes but different subject ("svc:test" both?) -> use distinct sub
     from food_ingredients_ai.interop.auth import issue_token as _issue
     intruder = _issue("svc:intruder", ["formulation:write"])

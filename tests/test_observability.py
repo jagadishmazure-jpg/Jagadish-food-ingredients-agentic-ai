@@ -5,9 +5,8 @@ import logging
 
 import pytest
 
-from food_ingredients_ai.observability import costs, incidents, logging as json_logging
-from food_ingredients_ai.observability import tracing
-
+from food_ingredients_ai.observability import costs, incidents, tracing
+from food_ingredients_ai.observability import logging as json_logging
 
 # -- structured JSON logging ---------------------------------------------------
 

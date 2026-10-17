@@ -35,15 +35,15 @@ from fastapi import Depends, FastAPI, Header, HTTPException, Request
 from fastapi.responses import HTMLResponse, JSONResponse, Response
 from pydantic import BaseModel, Field
 
-from food_ingredients_ai.demo import SCENARIOS
-from food_ingredients_ai.framework.agents import AGENT_ORDER, build_framework_agents
-from food_ingredients_ai.framework.runner import build_demo_context, run_reformulation
 from food_ingredients_ai.analytics import (
     AggregateStore,
     PeerBenchmark,
     extract_run_summary,
     flag_anomalies,
 )
+from food_ingredients_ai.demo import SCENARIOS
+from food_ingredients_ai.framework.agents import AGENT_ORDER, build_framework_agents
+from food_ingredients_ai.framework.runner import build_demo_context, run_reformulation
 from food_ingredients_ai.interop.a2a import build_agent_cards
 from food_ingredients_ai.interop.auth import (
     AuthenticationError,

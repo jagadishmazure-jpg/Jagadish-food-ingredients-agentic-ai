@@ -15,8 +15,8 @@ cascading failures — the failure modes unit tests cannot see.
 from __future__ import annotations
 
 from collections import deque
-from datetime import datetime, timedelta, timezone
-from typing import Callable, Deque, Dict, Tuple
+from datetime import datetime, timedelta
+from typing import Deque, Dict, Tuple
 
 from food_ingredients_ai.controlplane.budgets import Clock, _utcnow
 

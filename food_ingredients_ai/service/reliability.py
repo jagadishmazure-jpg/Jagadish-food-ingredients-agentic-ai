@@ -23,7 +23,7 @@ import os
 import random
 import threading
 import time
-from typing import Any, Callable, Dict, List, Optional, Tuple, Type
+from typing import Any, Callable, Dict, Optional, Tuple, Type
 
 from food_ingredients_ai.harness.runner import CircuitBreaker
 

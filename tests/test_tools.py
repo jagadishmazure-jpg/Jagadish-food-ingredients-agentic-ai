@@ -21,7 +21,6 @@ from food_ingredients_ai.tools import (
     validate_against_schema,
 )
 
-
 # -- sandbox -------------------------------------------------------------------
 
 

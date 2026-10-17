@@ -18,7 +18,7 @@ TEXTURE_RISK_THRESHOLD = 85.0
 SHELF_LIFE_TARGET_DAYS = 7.0
 
 # Categories with elevated texture/shelf-stability sensitivity in the demo.
-# Rationale (paraphrased from public clean-label manufacturer research):
+# Demo assumption:
 # shelf-life anxiety is a top barrier to conversion, especially in bakery
 # where gums and functional starches drive stability. The demo therefore
 # emits an extra advisory flag for these categories whenever a reformulation

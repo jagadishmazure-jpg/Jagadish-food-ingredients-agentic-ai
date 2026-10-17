@@ -15,7 +15,7 @@ REDUCED_SUGAR_MIN_REDUCTION = 0.25  # >=25% less sugar vs baseline
 HIGH_PROTEIN_MIN_G = 10.0  # per 100 g, demo threshold
 
 # Claim priority for pursuit order.
-# Rationale (paraphrased from public clean-label consumer research):
+# Demo assumption:
 # "natural / all natural" ranks as the most important packaged-food claim,
 # followed by no-artificial-ingredient cues, then reduced-sugar and
 # high-protein cues. The demo uses this ordering when several claims are
