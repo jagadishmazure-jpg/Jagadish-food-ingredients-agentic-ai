@@ -172,6 +172,7 @@ keys). Live-LLM failures degrade gracefully to the offline pipeline
 | Legacy intelligence layer (wrap-don't-replace, L0→L3) | [docs/legacy-intelligence.md](docs/legacy-intelligence.md) |
 | Tool-calling patterns (OpenAPI gen, chains, resilience) | [docs/tool-calling.md](docs/tool-calling.md) |
 | Threat model, controls, production checklist | [docs/security.md](docs/security.md) |
+| Use-case evaluation canvas (go/no-go before building) | [docs/use-case-evaluation.md](docs/use-case-evaluation.md) |
 
 Peer benchmarks are computed against deterministic synthetic
 distributions and are always labeled as such — they demonstrate the
