@@ -13,7 +13,7 @@ against Azure OpenAI by swapping one client.
 1. **Agents that can say no.** The claim validator rejects "natural" while
    refined sugar remains: 2 of 3 claims pass in the headline run.
 2. **Determinism for testing.** A scripted `FakeChatClient` implements the
-   framework's chat client interface, so 687 tests and the eval suite (20/20)
+   framework's chat client interface, so 687 pytest tests and the eval suite (20/20)
    run with no keys. Live mode is one client swap.
 3. **Governance in the path, not beside it.** Scoped tokens per skill, a policy
    engine, human approval gates and a hash-chained audit log.

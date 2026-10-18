@@ -73,10 +73,11 @@ edge (covered by Front Door), insider threats, model-weight theft.
 4. **Content Safety categories** (hate/violence/etc.) are not implemented
    locally — the demo relies on pattern guardrails; production needs the
    Azure Content Safety API.
-5. **Terraform is unvalidated** (no `terraform` binary in the build
-   environment) — run `terraform validate` + `plan` before first apply.
-6. **Playwright UI tests need a browser** — they typecheck but don't run
-   in this sandbox; they run in CI via `qa.yml`.
+5. **Terraform is validated, never applied** — CI runs `terraform fmt -check`
+   and `terraform validate`; run `plan` against your own subscription before
+   any first apply.
+6. **Playwright runs in Chromium only in CI** — `qa.yml` installs Chromium and
+   runs all 21 API/UI tests; Firefox and WebKit are configured but not run in CI.
 7. **Session IDs are client-supplied** (`X-Session-Id`) — acceptable
    because sessions hold only turn counts/intents, no sensitive state.
 8. **`degraded_reason`** may include live-LLM exception text — only in
@@ -104,5 +105,5 @@ edge (covered by Front Door), insider threats, model-weight theft.
       `infra/monitoring/prometheus-rules.yaml`.
 - [ ] Restrict `readOnlyRootFilesystem` exceptions: if `SERVICE_AUDIT_LOG`
       points at a file, mount a writable volume for that path only.
-- [ ] Run the Playwright UI suite in CI (`qa.yml`) once browser
-      installation is available.
+- [x] Run the Playwright UI suite in CI (`qa.yml`), Chromium (done).
+- [ ] Add Firefox and WebKit to the CI Playwright run.

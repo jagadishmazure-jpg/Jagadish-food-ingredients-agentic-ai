@@ -28,8 +28,9 @@ manufacturing** — a portfolio-grade reference implementation.
   with governance, guardrails, evals, A2A/MCP interop and an Azure IaC path.
 - **Real numbers:** the headline scenario flags 7 ingredients, substitutes 6,
   removes 1, predicts 92.2% texture match and 8.2 days shelf-life, and rejects
-  the "natural" claim; the labelled eval suite passes 20/20; 687 tests pass
-  (2 skipped), plus a Playwright API/UI suite in CI.
+  the "natural" claim; the labelled eval suite passes 20/20; 687 pytest tests pass
+  (2 skipped), plus 21 Playwright API/UI tests (18 API, 3 UI) that pass in CI
+  against the running service in Chromium: 708 automated tests in total.
 - **Engineering:** deterministic offline runs with a scripted chat client,
   pinned CI (tests, lint, Terraform validate, gitleaks, Playwright, CodeQL),
   and honest labelling of every heuristic and synthetic number.
@@ -100,7 +101,9 @@ uv run pytest -q        # or: python -m pytest -q
 
 Fully offline, no network or API keys; the framework agents run against the
 scripted `FakeChatClient`. Collected now (687 pass; the 2 skips are checks for
-the planned `deploy.yml`):
+the planned `deploy.yml`). The 21 Playwright tests in `qa/` are counted
+separately with `npx playwright test --list --project=chromium` (63 if all three
+browsers in `playwright.config.ts` are run; CI runs Chromium only):
 
 <!-- run: python scripts/count_tests.py -->
 ```text
