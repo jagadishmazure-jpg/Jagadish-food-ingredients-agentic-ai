@@ -1,3 +1,3 @@
 # False positives: a variable name (VENDOR_SKILL_ID) in a test, not a secret.
-f8abe136e48a7de975a997dfc80b0cae63783bab:tests/test_vendor_handoff.py:generic-api-key:104
+ac3983ef663608c5ad19080be253483ac75e4335:tests/test_vendor_handoff.py:generic-api-key:104
 tests/test_vendor_handoff.py:generic-api-key:102
