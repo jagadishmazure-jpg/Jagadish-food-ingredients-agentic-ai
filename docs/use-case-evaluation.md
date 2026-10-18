@@ -54,7 +54,8 @@ Default to the stricter mode; relax only with eval evidence.
 - Who owns the prompts, evals, and data pipelines after launch? Name them.
 - Expected monthly upkeep (eval refresh, prompt tweaks, data drift checks)
   versus the business metric in section 1. If upkeep exceeds ~20% of the
-  expected gain, the use case is too fragile for its value.
+  expected gain, the use case is too fragile for its value (my rule of thumb,
+  not a measured threshold).
 
 ## 7. Go / no-go
 
