@@ -27,7 +27,7 @@ against Azure OpenAI by swapping one client.
 ## Likely follow-ups
 
 - *Why Agent Framework rather than LangGraph?* It is Microsoft's supported
-  stack on Azure AI Foundry; the patterns (tools, workflows, fan-out) map either way.
+  stack on Microsoft Foundry; the patterns (tools, workflows, fan-out) map either way.
 - *How would you validate the shelf-life model?* Replace the heuristic with a
   model trained on lab stability data and compare predicted against measured days.
 - *What stops a prompt injection reaching a tool?* Input guardrails, scoped

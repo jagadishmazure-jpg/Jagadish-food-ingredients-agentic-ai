@@ -1,9 +1,9 @@
-# Deploying on Azure AI Foundry (with Azure OpenAI)
+# Deploying on Microsoft Foundry (with Azure OpenAI)
 
 This project is built on **Microsoft Agent Framework 1.0** (`agent-framework-core`
 and `agent-framework-openai`, pinned to `==1.0.1`). The offline path runs fully
 locally with a scripted fake chat client; the live path calls Azure OpenAI and
-is structured so the same agents can be hosted on **Azure AI Foundry**.
+is structured so the same agents can be hosted on **Microsoft Foundry**.
 
 > Synthetic-data disclaimer: every ingredient, formula, reading, and number in
 > this repo is fictional demo data. This is an independent portfolio project,
@@ -11,7 +11,7 @@ is structured so the same agents can be hosted on **Azure AI Foundry**.
 
 ## 1. Create the Foundry project
 
-1. Go to [Azure AI Foundry](https://ai.azure.com) and sign in.
+1. Go to [Microsoft Foundry](https://ai.azure.com) and sign in.
 2. **Create a project** (select your Azure subscription and resource group).
 3. Note the project's **endpoint** — you will not need it for the local live
    demo, but you will for hosted deployment.
@@ -80,7 +80,7 @@ Options, in increasing order of managed-ness:
    `run_reformulation(ctx, live=True)`. Use a managed identity and leave
    `AZURE_OPENAI_API_KEY` unset.
 
-2. **Azure AI Foundry Agent Service.** Foundry's Agent Service can host
+2. **Microsoft Foundry Agent Service.** Foundry's Agent Service can host
    agents built with Microsoft Agent Framework. Package each domain agent's
    instructions + function-tools (see `food_ingredients_ai/framework/agents.py`
    and `tools.py`) as a Foundry agent definition, pointing tools at Azure

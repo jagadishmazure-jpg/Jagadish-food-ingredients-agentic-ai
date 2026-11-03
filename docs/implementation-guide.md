@@ -17,7 +17,7 @@ Check: tests pass, the demo prints the 7 / 6 / 1 headline, and
 
 ## 2. Switch to a real model
 
-1. Create an Azure AI Foundry project and deploy a chat model.
+1. Create a Microsoft Foundry project and deploy a chat model.
 2. Copy `.env.example` to `.env`; set `AZURE_OPENAI_ENDPOINT` and
    `AZURE_OPENAI_CHAT_DEPLOYMENT`. Leave the API key empty to use
    `DefaultAzureCredential` (managed identity in Azure, `az login` locally).

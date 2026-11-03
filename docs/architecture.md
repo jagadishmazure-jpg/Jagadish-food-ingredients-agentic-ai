@@ -78,7 +78,7 @@ deployment discussion:
 | Demo component              | Azure equivalent (conceptual)                          |
 |-----------------------------|--------------------------------------------------------|
 | Orchestrator / planner      | Microsoft Agent Framework (planner + orchestration)    |
-| Specialist agents           | Agent Framework agents / Azure AI Foundry agents       |
+| Specialist agents           | Agent Framework agents / Microsoft Foundry agents       |
 | Tool functions              | Azure Functions behind Azure API Management            |
 | FakeLLM                     | Azure OpenAI (swap-in point; interface-compatible)     |
 | ingredients/formulas JSON   | PLM / ingredient DB via Fabric lakehouse               |

@@ -123,7 +123,7 @@ enterprise path): [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## Deploy on Foundry
 
-The agents are structured for **Azure AI Foundry**: same agents, same
+The agents are structured for **Microsoft Foundry**: same agents, same
 workflow, only the chat client changes. Step-by-step — Foundry project
 setup, model deployment, env config, live demo, and hosting options
 (Container Apps, Foundry Agent Service) — in
