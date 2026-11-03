@@ -368,7 +368,7 @@ food_ingredients_ai/
 evals/             Regression expectations for the demo (deterministic)
 docs/              Architecture, Foundry deployment, identity, governance,
                    integrations, benefits, demo guide, glossary, SOC +
-                   architecture alignment, attachments coverage, usecases,
+                   architecture alignment, usecases,
                    context-engineering, harness, loops, graph, reliability,
                    deployment runbook, stack alignment, analytics, finops,
                    monitoring, azure-integration, microsoft alignment

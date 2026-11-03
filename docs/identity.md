@@ -1,8 +1,7 @@
 # Identity & Access
 
 > **Disclaimer.** Independent portfolio demo; all data synthetic; not
-> affiliated with any real company. Identity concepts below are
-> paraphrased in our own words — no passages copied from vendor ebooks.
+> affiliated with any real company.
 
 This project demonstrates identity at **two layers**: (1) the agent API
 service and its Azure dependencies, and (2) agent-to-agent calls.

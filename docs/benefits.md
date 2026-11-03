@@ -4,8 +4,7 @@
 > company. All data is synthetic. The figures below (team expertise gaps,
 > cost as the main barrier, 5–7 month reformulation timelines, a 10%+ price
 > premium for valued claims) are **demo assumptions** that drive the
-> heuristics. They were inspired by public industry reading on clean-label
-> reformulation but are not sourced claims and should not be cited.
+> heuristics, not sourced claims.
 
 Each of the four domain agents exists to address a common pain point in
 clean-label reformulation:
