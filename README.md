@@ -107,7 +107,7 @@ browsers in `playwright.config.ts` are run; CI runs Chromium only):
 
 <!-- run: python scripts/count_tests.py -->
 ```text
-689 tests collected
+693 tests collected
 ```
 <!-- /run -->
 
